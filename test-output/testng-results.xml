@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-04T17:38:44 IST" name="Default suite" finished-at="2025-04-04T17:38:47 IST" duration-ms="3764">
+    <groups>
+    </groups>
+    <test started-at="2025-04-04T17:38:44 IST" name="Default test" finished-at="2025-04-04T17:38:47 IST" duration-ms="3764">
+      <class name="TD.regression.TestSetUp">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TD.regression.TestSetUp@7193666c]" started-at="2025-04-04T17:38:44 IST" name="setup" finished-at="2025-04-04T17:38:45 IST" duration-ms="1349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="firstTestCase()[pri:0, instance:TD.regression.TestSetUp@7193666c]" started-at="2025-04-04T17:38:45 IST" name="firstTestCase" finished-at="2025-04-04T17:38:45 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTestCase -->
+        <test-method signature="testApplication()[pri:0, instance:TD.regression.TestSetUp@7193666c]" started-at="2025-04-04T17:38:45 IST" name="testApplication" finished-at="2025-04-04T17:38:47 IST" duration-ms="2161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplication -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TD.regression.TestSetUp@7193666c]" started-at="2025-04-04T17:38:47 IST" name="teardown" finished-at="2025-04-04T17:38:47 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TD.regression.TestSetUp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
