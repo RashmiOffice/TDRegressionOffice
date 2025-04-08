@@ -9,9 +9,9 @@ public class TestLogin {
 //		// TODO Auto-generated method stub
 //		System.out.println("Hello World!");
 //	}
-	@Test
+	@Test (priority = 3)
 	public void firstTestCase() {
-		System.out.println("My first Test case");
+		System.out.println(" priority = 3 My first Test case");
 	}
 	
 
