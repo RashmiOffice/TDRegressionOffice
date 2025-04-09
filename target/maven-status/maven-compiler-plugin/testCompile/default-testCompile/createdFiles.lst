@@ -1,3 +1,6 @@
-TD\regression\TestSetUp.class
 com\sun\tools\javac\util\Assert.class
 TD\regression\TestLogin.class
+utils\ScreenshotUtil.class
+pages\HomePageLocators.class
+TD\regression\TestSetUp.class
+listeners\TestListener.class

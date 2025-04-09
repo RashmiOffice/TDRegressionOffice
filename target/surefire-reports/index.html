@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="enterOTPTest">enterOTPTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="verifyNavigationMenuItems">verifyNavigationMenuItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,17 +132,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="tdfirstTestCase">tdfirstTestCase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="printAllMenuItems">printAllMenuItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="tdtestApplication">tdtestApplication</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="scrollTest">scrollTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="tdtestTitle">tdtestTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="validatePageTitle">validatePageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -133,6 +157,74 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TD.regression.TestSetUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterOTPTest">
+                  </a> <!-- enterOTPTest -->
+                  <span class="method-name">enterOTPTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(@class, &apos;otpScreen&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52733/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7e2713c5a0a64c6857fd6e9863d704f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at TD.regression.TestSetUp.enterOTPTest(TestSetUp.java:242)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary logoutProfile css-rlrsg9&quot; tabindex=&quot;0&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (1202, 31). Other element would receive the click: &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary logoutProfile css-rlrsg9&quot; tabindex=&quot;0&quot; type=&quot;button&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=135.0.7049.42)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7e2713c5a0a64c6857fd6e9863d704f, clickElement {id=f.35BEBFCE02253EEFBB1BDF64DD620FDA.d.3728C22728827A709B948B4BC14EFB7E.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52733/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c7e2713c5a0a64c6857fd6e9863d704f)] -&gt; xpath: //div[contains(@class, &apos;profileBlock&apos;)]//button[1]]
+Session ID: c7e2713c5a0a64c6857fd6e9863d704f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TD.regression.TestSetUp.loginTest(TestSetUp.java:221)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigationMenuItems">
+                  </a> <!-- verifyNavigationMenuItems -->
+                  <span class="method-name">verifyNavigationMenuItems</span>
+                  <div class="stack-trace">java.lang.AssertionError: Mismatch in menu item count expected [7] but found [14]
+	at TD.regression.TestSetUp.verifyNavigationMenuItems(TestSetUp.java:272)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -156,23 +248,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tdfirstTestCase">
-                  </a> <!-- tdfirstTestCase -->
-                  <span class="method-name">tdfirstTestCase</span>
+                  <a name="printAllMenuItems">
+                  </a> <!-- printAllMenuItems -->
+                  <span class="method-name">printAllMenuItems</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tdtestApplication">
-                  </a> <!-- tdtestApplication -->
-                  <span class="method-name">tdtestApplication</span>
+                  <a name="scrollTest">
+                  </a> <!-- scrollTest -->
+                  <span class="method-name">scrollTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tdtestTitle">
-                  </a> <!-- tdtestTitle -->
-                  <span class="method-name">tdtestTitle</span>
+                  <a name="validatePageTitle">
+                  </a> <!-- validatePageTitle -->
+                  <span class="method-name">validatePageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,6 +280,7 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;listeners.TestListener&quot;/&gt;
       &lt;class name=&quot;TD.regression.TestLogin&quot;/&gt;
       &lt;class name=&quot;TD.regression.TestSetUp&quot;/&gt;
     &lt;/classes&gt;
@@ -203,7 +296,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (2 classes)</span>
+                <span class="test-name">Surefire test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,28 +322,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tdtestApplication')
+data.setCell(0, 1, 'enterOTPTest')
 data.setCell(0, 2, 'TD.regression.TestSetUp')
-data.setCell(0, 3, 24408);
+data.setCell(0, 3, 20349);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tdtestTitle')
+data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'TD.regression.TestSetUp')
-data.setCell(1, 3, 3599);
+data.setCell(1, 3, 1957);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'firstTestCase')
-data.setCell(2, 2, 'TD.regression.TestLogin')
-data.setCell(2, 3, 10);
+data.setCell(2, 1, 'validatePageTitle')
+data.setCell(2, 2, 'TD.regression.TestSetUp')
+data.setCell(2, 3, 1864);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tdfirstTestCase')
+data.setCell(3, 1, 'printAllMenuItems')
 data.setCell(3, 2, 'TD.regression.TestSetUp')
-data.setCell(3, 3, 2);
+data.setCell(3, 3, 132);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'scrollTest')
+data.setCell(4, 2, 'TD.regression.TestSetUp')
+data.setCell(4, 3, 30);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyNavigationMenuItems')
+data.setCell(5, 2, 'TD.regression.TestSetUp')
+data.setCell(5, 3, 17);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'firstTestCase')
+data.setCell(6, 2, 'TD.regression.TestLogin')
+data.setCell(6, 3, 6);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -286,23 +391,41 @@ return data;
               <div class="chronological-class-name">TD.regression.TestSetUp</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">tdtestTitle</span>
-                <span class="method-start">2264 ms</span>
+                <span class="method-name">validatePageTitle</span>
+                <span class="method-start">1472 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">tdfirstTestCase</span>
-                <span class="method-start">5865 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">3337 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">tdtestApplication</span>
-                <span class="method-start">5868 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">enterOTPTest</span>
+                <span class="method-start">5435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNavigationMenuItems</span>
+                <span class="method-start">25924 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">scrollTest</span>
+                <span class="method-start">26112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">printAllMenuItems</span>
+                <span class="method-start">26142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">30283 ms</span>
+                <span class="method-start">26274 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
