@@ -43,7 +43,7 @@ import org.testng.annotations.AfterClass;
 	    	 driver.get("https://test.templedekho.com/");
 	    	 
 	    	 String actualTitle = driver.getTitle();
-	         String expectedTitle = "Temple Dekho Best Online Puja Platform | Book Online Puja in India ";
+	         String expectedTitle = "Temple Dekho Best Online Puja Platform | Book Online Puja in India";
 	    	 
 	         Assert.assertEquals(actualTitle, expectedTitle, "Title mismatch!");
 
