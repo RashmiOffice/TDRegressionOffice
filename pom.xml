@@ -2,10 +2,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>TD</groupId>
-  <artifactId>regression</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+<groupId>org.example</groupId>
+    <artifactId>regression</artifactId>
+    <version>1.0-SNAPSHOT</version>
+     <packaging>jar</packaging>
+
 
   <name>regression</name>
   <url>http://maven.apache.org</url>
@@ -15,27 +16,43 @@
   </properties>
 
   <dependencies>
+  
+  <!-- TestNG -->
     <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.6.1</version>
     <scope>test</scope>
 </dependency>
+
+<!-- Selenium WebDriver -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.16.1</version>
 </dependency>
+
+<!-- ExtentReports for fancy HTML report -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+
 <dependency>
     <groupId>org.slf4j</groupId>
     <artifactId>slf4j-simple</artifactId>
     <version>1.7.12</version>
 </dependency>
+
+
 <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
     <version>2.11.0</version>
 </dependency>
+
+
 <dependency>
     <groupId>org.slf4j</groupId>
     <artifactId>slf4j-api</artifactId>
@@ -43,4 +60,21 @@
 </dependency>
 
   </dependencies>
+   <build>
+        <plugins>
+            <!-- Maven Surefire Plugin to run TestNG -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.3</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+  
+  
 </project>

@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T15:50:23 IST" name="Default suite" finished-at="2025-04-10T15:51:29 IST" duration-ms="66175">
+  <suite started-at="2025-04-11T11:52:02 IST" name="Default suite" finished-at="2025-04-11T11:53:08 IST" duration-ms="66662">
     <groups>
     </groups>
-    <test started-at="2025-04-10T15:50:23 IST" name="Default test" finished-at="2025-04-10T15:51:29 IST" duration-ms="66175">
+    <test started-at="2025-04-11T11:52:02 IST" name="Default test" finished-at="2025-04-11T11:53:08 IST" duration-ms="66662">
       <class name="TD.regression.TestSetUp">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TD.regression.TestSetUp@77c2494c]" started-at="2025-04-10T15:50:23 IST" name="setup" finished-at="2025-04-10T15:50:24 IST" duration-ms="1457" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:52:02 IST" name="setup" finished-at="2025-04-11T11:52:03 IST" duration-ms="1350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validatePageTitle()[pri:1, instance:TD.regression.TestSetUp@77c2494c]" started-at="2025-04-10T15:50:24 IST" name="validatePageTitle" finished-at="2025-04-10T15:50:26 IST" duration-ms="2015" status="PASS">
+        <test-method signature="validatePageTitle()[pri:1, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:52:03 IST" name="validatePageTitle" finished-at="2025-04-11T11:52:05 IST" duration-ms="2105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePageTitle -->
-        <test-method signature="loginTest()[pri:2, instance:TD.regression.TestSetUp@77c2494c]" started-at="2025-04-10T15:50:26 IST" name="loginTest" finished-at="2025-04-10T15:50:47 IST" duration-ms="21186" status="PASS">
+        <test-method signature="loginTest()[pri:2, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:52:05 IST" name="loginTest" finished-at="2025-04-11T11:52:16 IST" duration-ms="11278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="enterOTPTest()[pri:3, instance:TD.regression.TestSetUp@77c2494c]" started-at="2025-04-10T15:50:47 IST" name="enterOTPTest" finished-at="2025-04-10T15:51:28 IST" duration-ms="40429" status="PASS">
+        <test-method signature="enterOTPTest()[pri:3, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:52:16 IST" name="enterOTPTest" finished-at="2025-04-11T11:52:57 IST" duration-ms="40458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterOTPTest -->
-        <test-method signature="verifyNavigationMenuItems()[pri:4, instance:TD.regression.TestSetUp@77c2494c]" started-at="2025-04-10T15:51:28 IST" name="verifyNavigationMenuItems" finished-at="2025-04-10T15:51:28 IST" duration-ms="439" status="FAIL">
+        <test-method signature="verifyNavigationMenuItems()[pri:4, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:52:57 IST" name="verifyNavigationMenuItems" finished-at="2025-04-11T11:53:07 IST" duration-ms="10230" status="FAIL">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: stale element not found in the current frame
@@ -32,10 +32,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f27adf524275e3c29fb523b28f802e8e, getElementText {id=f.1017F876C11165262F15499A77AE7B2A.d.61D68D9E16CBB2B833DB1C2002E46F8E.e.54}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64695/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f27adf524275e3c29fb523b28f802e8e)] -> xpath: //ul[@class='links']/li]
-Session ID: f27adf524275e3c29fb523b28f802e8e]]>
+Command: [af764aae0cb5211fba952dc262248713, getElementText {id=f.74183DD0EFBBE951586544959C1997D2.d.794A0E1FF6BC907BA7920BEEF24A9D3A.e.101}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53469/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (af764aae0cb5211fba952dc262248713)] -> xpath: //ul[@class='links']/li]
+Session ID: af764aae0cb5211fba952dc262248713]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
@@ -44,10 +44,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f27adf524275e3c29fb523b28f802e8e, getElementText {id=f.1017F876C11165262F15499A77AE7B2A.d.61D68D9E16CBB2B833DB1C2002E46F8E.e.54}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64695/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f27adf524275e3c29fb523b28f802e8e)] -> xpath: //ul[@class='links']/li]
-Session ID: f27adf524275e3c29fb523b28f802e8e
+Command: [af764aae0cb5211fba952dc262248713, getElementText {id=f.74183DD0EFBBE951586544959C1997D2.d.794A0E1FF6BC907BA7920BEEF24A9D3A.e.101}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53469/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (af764aae0cb5211fba952dc262248713)] -> xpath: //ul[@class='links']/li]
+Session ID: af764aae0cb5211fba952dc262248713
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -60,7 +60,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
-at TD.regression.TestSetUp.verifyNavigationMenuItems(TestSetUp.java:108)
+at TD.regression.TestSetUp.verifyNavigationMenuItems(TestSetUp.java:121)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -93,15 +93,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigationMenuItems -->
-        <test-method signature="scrollTest()[pri:5, instance:TD.regression.TestSetUp@77c2494c]" started-at="2025-04-10T15:51:28 IST" name="scrollTest" finished-at="2025-04-10T15:51:28 IST" duration-ms="33" status="PASS">
+        <test-method signature="scrollTest()[pri:5, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:53:07 IST" name="scrollTest" finished-at="2025-04-11T11:53:07 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollTest -->
-        <test-method signature="printAllMenuItems()[pri:6, instance:TD.regression.TestSetUp@77c2494c]" started-at="2025-04-10T15:51:28 IST" name="printAllMenuItems" finished-at="2025-04-10T15:51:29 IST" duration-ms="67" status="PASS">
+        <test-method signature="printAllMenuItems()[pri:6, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:53:07 IST" name="printAllMenuItems" finished-at="2025-04-11T11:53:07 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printAllMenuItems -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TD.regression.TestSetUp@77c2494c]" started-at="2025-04-10T15:51:29 IST" name="teardown" finished-at="2025-04-10T15:51:29 IST" duration-ms="302" status="PASS">
+        <test-method signature="loginUserTest()[pri:7, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:53:07 IST" name="loginUserTest" finished-at="2025-04-11T11:53:07 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserTest -->
+        <test-method signature="loginUserNameTest()[pri:8, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:53:07 IST" name="loginUserNameTest" finished-at="2025-04-11T11:53:08 IST" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserNameTest -->
+        <test-method signature="pujaCardTest()[pri:9, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:53:08 IST" name="pujaCardTest" finished-at="2025-04-11T11:53:08 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pujaCardTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TD.regression.TestSetUp@3eb738bb]" started-at="2025-04-11T11:53:08 IST" name="teardown" finished-at="2025-04-11T11:53:08 IST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
