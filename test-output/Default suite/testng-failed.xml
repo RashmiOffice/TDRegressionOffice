@@ -5,9 +5,16 @@
     <classes>
       <class name="TD.regression.TestSetUp">
         <methods>
-          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="loginUserTest"/>
           <include name="setup"/>
-          <include name="verifyNavigationMenuItems"/>
+          <include name="enterOTPTest"/>
+          <include name="loginUserNameTest"/>
+          <include name="loginTest"/>
+          <include name="tearDownReport"/>
+          <include name="setupReport"/>
+          <include name="pujaCardTest"/>
+          <include name="scrollTest"/>
         </methods>
       </class> <!-- TD.regression.TestSetUp -->
     </classes>

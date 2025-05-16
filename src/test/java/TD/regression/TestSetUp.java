@@ -4,6 +4,7 @@ package TD.regression;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -67,8 +68,19 @@ public class TestSetUp {
     	loginBtn.click();
     	
         Assert.assertTrue(loginBtn.isDisplayed(), "Login button not visible");
+        System.out.println("Login button visible");
+        Thread.sleep(5000);
+        WebElement element = driver.findElement(By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 loginPhNoText css-15pynae']"));
+        String text = element.getText();
+
+        // Print or use the text
+        System.out.println("Element text is: " + text);
+        
+        String mInput = driver.findElement(HomePageLocators.MOBILE_INPUT).getText();
+        System.out.println("Input text is: " + mInput);
         
         WebElement mobileInput = wait.until(ExpectedConditions.visibilityOfElementLocated(HomePageLocators.MOBILE_INPUT));
+        System.out.println("enter mobile no");
         mobileInput.sendKeys("9830162522");
         Thread.sleep(5000);
         Assert.assertTrue(mobileInput.isDisplayed(), "Mobile input field not visible");

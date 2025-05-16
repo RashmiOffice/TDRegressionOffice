@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                    <span class="method-stats">10 methods, 6 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,32 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="verifyNavigationMenuItems">verifyNavigationMenuItems</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="enterOTPTest">enterOTPTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="loginUserNameTest">loginUserNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="loginUserTest">loginUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="pujaCardTest">pujaCardTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="scrollTest">scrollTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,27 +142,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="enterOTPTest">enterOTPTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TD.regression.TestLogin" class="method navigator-link" hash-for-method="firstTestCase">firstTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="loginUserNameTest">loginUserNameTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="loginUserTest">loginUserTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,17 +152,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="pujaCardTest">pujaCardTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="scrollTest">scrollTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="validatePageTitle">validatePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TD.regression.TestSetUp" class="method navigator-link" hash-for-method="verifyNavigationMenuItems">verifyNavigationMenuItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -180,19 +180,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyNavigationMenuItems">
-                  </a> <!-- verifyNavigationMenuItems -->
-                  <span class="method-name">verifyNavigationMenuItems</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=135.0.7049.42)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+                  <a name="enterOTPTest">
+                  </a> <!-- enterOTPTest -->
+                  <span class="method-name">enterOTPTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@class, &apos;otpScreen&apos;)]&quot;}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b89782c2ead2f3572c5a42cc648b02e8, getElementText {id=f.A655D19B51628431AADCC37D7B977FD0.d.D2E46AD6906C0889203ECDEE0BDA9080.e.93}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56351/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b89782c2ead2f3572c5a42cc648b02e8)] -&gt; xpath: //ul[@class=&apos;links&apos;]/li]
-Session ID: b89782c2ead2f3572c5a42cc648b02e8
+Command: [df6479804b21746e9b4e936a7b7f53b1, findElement {using=xpath, value=//*[contains(@class, &apos;otpScreen&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52020}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52020/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df6479804b21746e9b4e936a7b7f53b1
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -200,9 +199,92 @@ Session ID: b89782c2ead2f3572c5a42cc648b02e8
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
-	at TD.regression.TestSetUp.verifyNavigationMenuItems(TestSetUp.java:123)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at TD.regression.TestSetUp.enterOTPTest(TestSetUp.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;:ro:&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52020}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52020/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df6479804b21746e9b4e936a7b7f53b1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at TD.regression.TestSetUp.loginTest(TestSetUp.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUserNameTest">
+                  </a> <!-- loginUserNameTest -->
+                  <span class="method-name">loginUserNameTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@role=&apos;presentation&apos;]//h6[1] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52020}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52020/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df6479804b21746e9b4e936a7b7f53b1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at TD.regression.TestSetUp.loginUserNameTest(TestSetUp.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUserTest">
+                  </a> <!-- loginUserTest -->
+                  <span class="method-name">loginUserTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;root&quot;]/div/div[1]/div/nav/nav/div[1]/div[3]/div/div[3]/a/img (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\rashm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52020}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52020/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df6479804b21746e9b4e936a7b7f53b1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at TD.regression.TestSetUp.loginUserTest(TestSetUp.java:167)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pujaCardTest">
+                  </a> <!-- pujaCardTest -->
+                  <span class="method-name">pujaCardTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: No Puja cards found!
+	at TD.regression.TestSetUp.pujaCardTest(TestSetUp.java:188)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scrollTest">
+                  </a> <!-- scrollTest -->
+                  <span class="method-name">scrollTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Scroll target element not visible expected [true] but found [false]
+	at TD.regression.TestSetUp.scrollTest(TestSetUp.java:150)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -233,34 +315,6 @@ Session ID: b89782c2ead2f3572c5a42cc648b02e8
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="enterOTPTest">
-                  </a> <!-- enterOTPTest -->
-                  <span class="method-name">enterOTPTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginUserNameTest">
-                  </a> <!-- loginUserNameTest -->
-                  <span class="method-name">loginUserNameTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginUserTest">
-                  </a> <!-- loginUserTest -->
-                  <span class="method-name">loginUserTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="printAllMenuItems">
                   </a> <!-- printAllMenuItems -->
                   <span class="method-name">printAllMenuItems</span>
@@ -268,23 +322,16 @@ Session ID: b89782c2ead2f3572c5a42cc648b02e8
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="pujaCardTest">
-                  </a> <!-- pujaCardTest -->
-                  <span class="method-name">pujaCardTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="scrollTest">
-                  </a> <!-- scrollTest -->
-                  <span class="method-name">scrollTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="validatePageTitle">
                   </a> <!-- validatePageTitle -->
                   <span class="method-name">validatePageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigationMenuItems">
+                  </a> <!-- verifyNavigationMenuItems -->
+                  <span class="method-name">verifyNavigationMenuItems</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -344,50 +391,50 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'enterOTPTest')
+data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'TD.regression.TestSetUp')
-data.setCell(0, 3, 40412);
+data.setCell(0, 3, 21719);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
+data.setCell(1, 1, 'loginUserNameTest')
 data.setCell(1, 2, 'TD.regression.TestSetUp')
-data.setCell(1, 3, 11259);
+data.setCell(1, 3, 20409);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validatePageTitle')
+data.setCell(2, 1, 'loginUserTest')
 data.setCell(2, 2, 'TD.regression.TestSetUp')
-data.setCell(2, 3, 2040);
+data.setCell(2, 3, 20377);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginUserNameTest')
+data.setCell(3, 1, 'enterOTPTest')
 data.setCell(3, 2, 'TD.regression.TestSetUp')
-data.setCell(3, 3, 572);
+data.setCell(3, 3, 20039);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyNavigationMenuItems')
 data.setCell(4, 2, 'TD.regression.TestSetUp')
-data.setCell(4, 3, 417);
+data.setCell(4, 3, 10248);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginUserTest')
+data.setCell(5, 1, 'validatePageTitle')
 data.setCell(5, 2, 'TD.regression.TestSetUp')
-data.setCell(5, 3, 143);
+data.setCell(5, 3, 1931);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'printAllMenuItems')
 data.setCell(6, 2, 'TD.regression.TestSetUp')
-data.setCell(6, 3, 97);
+data.setCell(6, 3, 113);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'pujaCardTest')
+data.setCell(7, 1, 'scrollTest')
 data.setCell(7, 2, 'TD.regression.TestSetUp')
-data.setCell(7, 3, 96);
+data.setCell(7, 3, 36);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'scrollTest')
+data.setCell(8, 1, 'pujaCardTest')
 data.setCell(8, 2, 'TD.regression.TestSetUp')
-data.setCell(8, 3, 49);
+data.setCell(8, 3, 18);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'firstTestCase')
 data.setCell(9, 2, 'TD.regression.TestLogin')
-data.setCell(9, 3, 3);
+data.setCell(9, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -423,60 +470,70 @@ return data;
               <div class="chronological-class-name">TD.regression.TestLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">firstTestCase</span>
-                <span class="method-start">269 ms</span>
+                <span class="method-start">235 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TD.regression.TestSetUp</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">277 ms</span>
+                <span class="method-start">239 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validatePageTitle</span>
-                <span class="method-start">1688 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">3729 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterOTPTest</span>
-                <span class="method-start">14988 ms</span>
+                <span class="method-start">1610 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyNavigationMenuItems</span>
-                <span class="method-start">55400 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">3542 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">enterOTPTest</span>
+                <span class="method-start">25261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigationMenuItems</span>
+                <span class="method-start">45302 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">scrollTest</span>
-                <span class="method-start">55819 ms</span>
+                <span class="method-start">55550 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">printAllMenuItems</span>
-                <span class="method-start">55868 ms</span>
+                <span class="method-start">55587 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginUserTest</span>
-                <span class="method-start">55965 ms</span>
+                <span class="method-start">55700 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginUserNameTest</span>
-                <span class="method-start">56114 ms</span>
+                <span class="method-start">76078 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">pujaCardTest</span>
-                <span class="method-start">56686 ms</span>
+                <span class="method-start">96488 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">56782 ms</span>
+                <span class="method-start">96507 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">57094 ms</span>
+                <span class="method-start">96850 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
