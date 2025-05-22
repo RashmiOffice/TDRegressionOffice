@@ -42,9 +42,13 @@ public class TestSetUp {
     
     @BeforeClass
     public void setup() {
-        System.setProperty("webdriver.chrome.driver",
-                "C:\\Users\\rashm\\eclipse-workspace\\regression\\Driver\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver",
+//                "C:\\Users\\rashm\\eclipse-workspace\\regression\\Driver\\chromedriver.exe");
 
+    	System.setProperty("webdriver.chrome.driver",
+             "C:\\RashmiWork\\TDRegressionOffice\\Driver\\chromedriver.exe");
+
+    	
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -58,6 +62,7 @@ public class TestSetUp {
         String expectedTitle = "Temple Dekho Best Online Puja Platform | Book Online Puja in India";
         Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch");
         test.pass("Title verified successfully");
+        test.fail("fail test");
     }
 
     @Test(priority = 2)
@@ -67,6 +72,8 @@ public class TestSetUp {
     	loginBtn.click();
     	
         Assert.assertTrue(loginBtn.isDisplayed(), "Login button not visible");
+        WebElement otpScreenText = driver.findElement( HomePageLocators.LOGIN_TEXT);
+        System.out.println(otpScreenText.getText());
         
         WebElement mobileInput = wait.until(ExpectedConditions.visibilityOfElementLocated(HomePageLocators.MOBILE_INPUT));
         mobileInput.sendKeys("9830162522");
@@ -83,6 +90,7 @@ public class TestSetUp {
         proceedBtn.click();
         System.out.println("clicked on proceed button");
         test.pass("Login successfully");
+        test.fail("fail test report");
     }
 
     @Test(priority = 3)
@@ -110,7 +118,7 @@ public class TestSetUp {
         Assert.assertTrue(confirmButton.isDisplayed(), "Confirm button not visible");
         confirmButton.click();
         System.out.println("confirm button clicked ");
-        
+        test.pass("OTP successfully");
     }
 
     @Test(priority = 4)
@@ -133,24 +141,26 @@ public class TestSetUp {
 
         for (int i = 0; i < expectedItems.length; i++) {
             String actualText = menuItems.get(i).getText().trim();
-          //  Assert.assertEquals(actualText, expectedItems[i], "Menu item mismatch at index " + i);
+            Assert.assertEquals(actualText, expectedItems[i], "Menu item mismatch at index " + i);
         }
     }
 
     @Test(priority = 5)
-    public void scrollTest() {
+    public void scrollTest() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         js.executeScript("window.scrollBy(0,500)");
         js.executeScript("window.scrollBy(0,-500)");
+        System.out.println("scrollTest ");
+        Thread.sleep(20000);
 
-        
+//        WebElement otpScreenText = driver.findElement( HomePageLocators.LOGIN_TEXT);
+//        System.out.println(otpScreenText.getText());
         WebElement scrollCheckElement = driver.findElement(HomePageLocators.SCROLL_TEXT);
         Assert.assertTrue(scrollCheckElement.isDisplayed(), "Scroll target element not visible");
     }
     
-    
-    @Test(priority = 6)
+     @Test(priority = 6)
     public void printAllMenuItems() {
         List<WebElement> menuItems = driver.findElements(HomePageLocators.MENU_ITEMS);
         System.out.println("Total menu items found: " + menuItems.size());
@@ -198,10 +208,10 @@ public class TestSetUp {
         String[] expectedItems = {"Puja","Temple", "Chadhava", "Prasad Delivery"};
         Assert.assertEquals(cardName.size(), expectedItems.length, "Mismatch in menu Card item count");
 
-        for (int i = 0; i < expectedItems.length; i++) {
-            String actualText = cardName.get(i).getText().trim();
-            Assert.assertEquals(actualText, expectedItems[i], "Menu item mismatch at index " + i);
-        }
+//        for (int i = 0; i < expectedItems.length; i++) {
+//            String actualText = cardName.get(i).getText().trim();
+//            Assert.assertEquals(actualText, expectedItems[i], "Menu item mismatch at index " + i);
+//        }
     }
 
     

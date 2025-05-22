@@ -6,7 +6,7 @@
     <classes>
     
       <class name="TD.regression.TestLogin"/>
-      <class name="TD.regression.TestSetUp"/>
+      <class name="TD.regression.TestSetUp"/>  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
